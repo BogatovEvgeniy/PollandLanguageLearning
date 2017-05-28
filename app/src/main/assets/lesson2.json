@@ -1,0 +1,34 @@
+{
+  header: "Alphabet",
+  introduction: "Here we will learning polland alphabet",
+  content: {
+    words: [
+      {
+        ru: "Привет!",
+        pl: "Czesc!",
+        word_sound_file: ""
+      },
+      {
+        ru: "Добрый день!",
+        pl: "Dzien dobry!",
+        word_sound_file: ""
+      },
+      {
+        ru: "Как дела?",
+        pl: "Co slychac? / Jak leci?",
+        word_sound_file: ""
+      },
+      {
+        ru: "Вы из Европы?",
+        pl: "Pochodzi pan / pani z Europy? / Pochodza panstwo z Europy?",
+        word_sound_file: ""
+      },
+      {
+        ru: "Вы из Америки?",
+        pl: "Pochodzi pan / pani z Ameryki? / Pochodza panstwo z Ameryki?",
+        word_sound_file: ""
+      }
+    ],
+    text: ""
+  }
+}

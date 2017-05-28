@@ -1,0 +1,134 @@
+{
+  header: "Alphabet",
+  introduction: "Here we will learning polland alphabet",
+  letters: [
+    {
+      sign: "Aa",
+      sign_sound_file: "1-a.mp3"
+    },
+    {
+      sign: "Ąą",
+      sign_sound_file: "3-a.mp3"
+    },
+    {
+      sign: "Bb",
+      sign_sound_file: "5-b.mp3"
+    },
+    {
+      sign: "Cc",
+      sign_sound_file: "7-c.mp3"
+    },
+    {
+      sign: "Ćć",
+      sign_sound_file: "9-c.mp3"
+    },
+    {
+      sign: "Dd",
+      sign_sound_file: "11-d.mp3"
+    },
+    {
+      sign: "Ee",
+      sign_sound_file: "13-e.mp3"
+    },
+    {
+      sign: "Ęę",
+      sign_sound_file: "15-e.mp3"
+    },
+    {
+      sign: "Ff",
+      sign_sound_file: "17-f.mp3"
+    },
+    {
+      sign: "Gg",
+      sign_sound_file: "19-g.mp3"
+    },
+    {
+      sign: "Hh",
+      sign_sound_file: "21-h.mp3"
+    },
+    {
+      sign: "Ii",
+      sign_sound_file: "23-i.mp3"
+    },
+    {
+      sign: "Jj",
+      sign_sound_file: "25-j.mp3"
+    },
+    {
+      sign: "Kk",
+      sign_sound_file: "27-k.mp3"
+    },
+    {
+      sign: "Ll",
+      sign_sound_file: "29-l.mp3"
+    },
+    {
+      sign: "Łł",
+      sign_sound_file: "31-l.mp3"
+    },
+    {
+      sign: "Mm",
+      sign_sound_file: "33-m.mp3"
+    },
+    {
+      sign: "Nn",
+      sign_sound_file: "35-n.mp3"
+    },
+    {
+      sign: "Ńń",
+      sign_sound_file: "37-n.mp3"
+    },
+    {
+      sign: "Oo",
+      sign_sound_file: "39-o.mp3"
+    },
+    {
+      sign: "Óó",
+      sign_sound_file: "41-o.mp3"
+    },
+    {
+      sign: "Pp",
+      sign_sound_file: "43-p.mp3"
+    },
+    {
+      sign: "Rr",
+      sign_sound_file: "45-r.mp3"
+    },
+    {
+      sign: "Ss",
+      sign_sound_file: "47-s.mp3"
+    },
+    {
+      sign: "Śś",
+      sign_sound_file: "49-s.mp3"
+    },
+    {
+      sign: "Tt",
+      sign_sound_file: "51-t.mp3"
+    },
+    {
+      sign: "Uu",
+      sign_sound_file: "53-u.mp3"
+    },
+    {
+      sign: "Ww",
+      sign_sound_file: "55-w.mp3"
+    },
+    {
+      sign: "Xx",
+      sign_sound_file: "57-y.mp3"
+    },
+    {
+      sign: "Zz",
+      sign_sound_file: "59-z.mp3"
+    },
+    {
+      sign: "Źź",
+      sign_sound_file: "61-z.mp3"
+    },
+    {
+      sign: "Żż",
+      sign_sound_file: "63-z.mp3"
+    }
+  ]
+}
