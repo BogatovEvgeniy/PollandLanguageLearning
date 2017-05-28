@@ -13,4 +13,21 @@ public class DefaultLessonEntry {
     @SerializedName("content")
     DefaultLessonContent content;
 
+    public DefaultLessonEntry(String header, String introduction, DefaultLessonContent content) {
+        this.header = header;
+        this.introduction = introduction;
+        this.content = content;
+    }
+
+    public String getHeader() {
+        return header;
+    }
+
+    public String getIntroduction() {
+        return introduction;
+    }
+
+    public DefaultLessonContent getContent() {
+        return content;
+    }
 }

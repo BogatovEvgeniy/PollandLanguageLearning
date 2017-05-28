@@ -2,14 +2,31 @@ package com.ed.pollang.polandlanguageeducation.entries;
 
 import com.google.gson.annotations.SerializedName;
 
-class LessonWordsEntry {
+public class LessonWordsEntry {
     @SerializedName("ru")
-    String header;
+    String ru;
 
     @SerializedName("pl")
-    String introduction;
+    String pl;
 
     @SerializedName("word_sound_file")
-    DefaultLessonContent content;
+    String sound;
 
+    public LessonWordsEntry(String ru, String pl, String sound) {
+        this.ru = ru;
+        this.pl = pl;
+        this.sound = sound;
+    }
+
+    public String getRu() {
+        return ru;
+    }
+
+    public String getPl() {
+        return pl;
+    }
+
+    public String getSound() {
+        return sound;
+    }
 }

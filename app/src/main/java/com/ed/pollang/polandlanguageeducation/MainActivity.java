@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.widget.FrameLayout;
 
 import com.ed.pollang.polandlanguageeducation.entries.LessonEntry;
@@ -71,8 +72,8 @@ public class MainActivity extends AppCompatActivity implements SupportActionBarH
             fragment = LessonsFragment.newInstance();
         }
 
-        supportFragmentManager.beginTransaction().replace(R.id.container, fragment)
-                .addToBackStack(LessonsFragment.TAG).commit();
+        supportFragmentManager.beginTransaction().replace(R.id.container, fragment).addToBackStack(LessonsFragment.TAG)
+                .commit();
     }
 
     private void showAlphabetFragment(LessonEntry lessonEntry) {
@@ -83,8 +84,8 @@ public class MainActivity extends AppCompatActivity implements SupportActionBarH
             fragment = AlphabetLessonFragment.newInstance(lessonEntry);
         }
 
-        supportFragmentManager.beginTransaction().replace(R.id.container, fragment)
-                .addToBackStack(AlphabetLessonFragment.TAG).commit();
+        supportFragmentManager.beginTransaction().replace(R.id.container, fragment).addToBackStack(
+                AlphabetLessonFragment.TAG).commit();
     }
 
     private void showDefaultLessonFragment(LessonEntry lessonEntry) {
@@ -95,7 +96,18 @@ public class MainActivity extends AppCompatActivity implements SupportActionBarH
             fragment = DefaultLessonFragment.newInstance(lessonEntry);
         }
 
-        supportFragmentManager.beginTransaction().replace(R.id.container, fragment)
-                .addToBackStack(DefaultLessonFragment.TAG).commit();
+        supportFragmentManager.beginTransaction().replace(R.id.container, fragment).addToBackStack(
+                DefaultLessonFragment.TAG).commit();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                onBackPressed();
+                return true;
+            default:
+                return false;
+        }
     }
 }

@@ -5,7 +5,6 @@ import android.support.annotation.Nullable;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -29,6 +28,7 @@ public class AlphabetLessonFragment extends BaseFragment {
 
     private static final String EXTRA_LESSON_ENTRY = "extra_lesson_entry";
     private LessonEntry lessonEntry;
+    private LettersAdapter lettersAdapter;
 
     public static AlphabetLessonFragment newInstance(LessonEntry lessonEntry) {
         Bundle args = new Bundle();
@@ -67,15 +67,6 @@ public class AlphabetLessonFragment extends BaseFragment {
         supportActionBarHolder.getSupportActionBarInstance().setHomeAsUpIndicator(R.drawable.ic_arrow_back);
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()){
-            case android.R.id.home:
-                supportActionBarHolder.onBackButtonClicked();
-        }
-        return super.onOptionsItemSelected(item);
-    }
-
     private void setUpContentViews() {
         String lettersJsonObj = getStringJsonFromAssets(lessonEntry.getLessonFileName());
 
@@ -83,7 +74,8 @@ public class AlphabetLessonFragment extends BaseFragment {
         GridLayoutManager layout = new GridLayoutManager(getContext(), SPAN_COUNT);
         lettersList.setLayoutManager(layout);
         List<LetterEntry> letterEntryList = getLettersList(alphabetLessonEntry.getLettersList());
-        lettersList.setAdapter(new LettersAdapter(getContext(), letterEntryList));
+        lettersAdapter = new LettersAdapter(getContext(), letterEntryList);
+        lettersList.setAdapter(lettersAdapter);
     }
 
     private List<LetterEntry> getLettersList(LetterEntry[] lettersList) {
@@ -92,5 +84,11 @@ public class AlphabetLessonFragment extends BaseFragment {
             result.add(lettersList[i]);
         }
         return result;
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        lettersAdapter.onStop();
     }
 }

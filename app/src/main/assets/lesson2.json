@@ -1,6 +1,6 @@
 {
-  header: "Alphabet",
-  introduction: "Here we will learning polland alphabet",
+  header: "Lesson 1",
+  introduction: "Первый вводный урок курса",
   content: {
     words: [
       {
@@ -29,6 +29,6 @@
         word_sound_file: ""
       }
     ],
-    text: ""
+    text: "W czytelni. /n Janek jest w czytelni i czyta książkę. Janek nie jest sam w czytelni. Razem z nim są tam inne osoby. Wszystkie te osoby to studenci, koleżanki i koledzy Janka. Janek jest studentem. On jest studentem drugiego roku polonistyki. Przy stoliku obok siedzi Agata, Janka koleżanka z grupy. Agata również czyta książkę, ale inną. Oboje, jak większość, z osób w czytelni, przygotowują się do egzaminu. Janek zawsze przygotowuje się do egzaminów w czytelni, on lubi tam być. W czytelni, zawsze jest cisza i spokój. Janek potrzebuje ciszy i spokoju, żeby przygotować się do egzaminu."
   }
 }
