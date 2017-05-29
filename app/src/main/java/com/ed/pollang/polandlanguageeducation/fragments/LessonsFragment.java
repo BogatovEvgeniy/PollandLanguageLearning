@@ -67,6 +67,7 @@ public class LessonsFragment extends BaseFragment {
 
     private void setUpToolbar() {
         supportActionBarHolder.getSupportActionBarInstance().setTitle(R.string.menu);
+        supportActionBarHolder.getSupportActionBarInstance().setHomeAsUpIndicator(R.drawable.ic_menu);
     }
 
     private void setUpContentViews() {

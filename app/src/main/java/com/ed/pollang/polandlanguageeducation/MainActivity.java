@@ -6,7 +6,6 @@ import android.support.v4.app.FragmentManager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.MenuItem;
 import android.widget.FrameLayout;
 
 import com.ed.pollang.polandlanguageeducation.entries.LessonEntry;
@@ -98,16 +97,5 @@ public class MainActivity extends AppCompatActivity implements SupportActionBarH
 
         supportFragmentManager.beginTransaction().replace(R.id.container, fragment).addToBackStack(
                 DefaultLessonFragment.TAG).commit();
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                onBackPressed();
-                return true;
-            default:
-                return false;
-        }
     }
 }
