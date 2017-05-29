@@ -71,8 +71,7 @@ public class MainActivity extends AppCompatActivity implements SupportActionBarH
             fragment = LessonsFragment.newInstance();
         }
 
-        supportFragmentManager.beginTransaction().replace(R.id.container, fragment).addToBackStack(LessonsFragment.TAG)
-                .commit();
+        supportFragmentManager.beginTransaction().replace(R.id.container, fragment).commit();
     }
 
     private void showAlphabetFragment(LessonEntry lessonEntry) {
